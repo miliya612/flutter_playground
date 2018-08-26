@@ -186,6 +186,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.9.6+2"
+  money:
+    dependency: "direct main"
+    description:
+      name: money
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.1"
   multi_server_socket:
     dependency: transitive
     description:
@@ -388,4 +395,4 @@ packages:
     source: hosted
     version: "2.1.15"
 sdks:
-  dart: ">=2.0.0-dev.68.0 <3.0.0"
+  dart: ">=2.0.0 <3.0.0"

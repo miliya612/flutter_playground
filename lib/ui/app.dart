@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:playground/ui/balance.dart';
+import 'package:playground/ui/history.dart';
 import 'package:playground/ui/profile.dart';
+import 'package:playground/ui/send.dart';
+import 'package:playground/ui/settings.dart';
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -68,7 +71,13 @@ class _MyHomePageState extends State<MyHomePage> {
         body: new PageView(
           controller: _pageController,
           onPageChanged: onPageChanged,
-          children: <Widget>[new ProfilePage(), new BalancePage()],
+          children: <Widget>[
+            ProfilePage(),
+            BalancePage(),
+            SendPage(),
+            HistoryPage(),
+            SettingsPage()
+          ],
         ),
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
@@ -94,10 +103,10 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.settings),
-                title: Text(
-                  "settings",
-                ),
+              icon: Icon(Icons.settings),
+              title: Text(
+                "settings",
+              ),
             ),
           ],
         ),
